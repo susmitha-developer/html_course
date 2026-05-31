@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+
+text = "Hello JavaScript World";
+
+//console.log("Original String :", text);
+
+// 1. length
+//console.log("Length :", text.length);
+
+// 2. toUpperCase()
+//console.log("Uppercase :", text.toUpperCase());
+
+// 3. toLowerCase()
+//console.log("Lowercase :", text.toLowerCase());
+
+// 4. charAt()
+//console.log(text.charAt(1));
+//console.log(text.indexOf("o"))
+
+// 5. at()
+//console.log("At index 4 :", text.at(4));
+
+// 6. indexOf()
+//console.log(text.indexOf("JavaScript"));
+
+// 7. lastIndexOf()
+//msg = "apple mango apple";
+//console.log(msg.lastIndexOf("apple"));
+
+// 8. includes()
+// console.log("Includes 'World' :", text.includes("Hello"));
+
+// 9. startsWith()
+//console.log("Starts With Hello :", text.startsWith("gHello"));
+
+// 10. endsWith()
+//console.log("Ends With World :", text.endsWith("World"));
+
+// 11. slice()
+//console.log("Slice :", text.slice(2,5));
+
+// 12. substring()
+//console.log("Substring :", text.substring(0, 4));
+
+// 13. substr()
+//console.log("Substr :", text.substr(6, 10));
+
+// 14. replace()
+//console.log("Replace :", text.replace("World", "Students"));
+
+// 15. replaceAll()
+//let data = "cat dog cat";
+//console.log("Replace All :", text.replaceAll("Hello", "Hii"));
+
+// 16. trim() a=    kiuh
+//let space = "    FITA Academy    ";
+//console.log("Trim :", space.trim());
+
+// 17. concat()
+//let a = "Hello";
+//let b = " Students";
+//console.log("Concat :", a.concat(b));
+
+// 18. split()
+//let fruits = "apple,mango,orange";
+//console.log("Split :", fruits.split(","));
+
+// 19. repeat()
+//console.log("Hi ".repeat(3));
+
+// 20. padStart()
+//let num = "45";
+//console.log("Pad Start :", num.padStart(4, "*"));
+
+// 21. padEnd()
+//console.log("Pad End :", num.padEnd(10, "*"));
+
+// 22. match()
+let sentence = "I love JavaScript";
+//console.log("Match :", sentence.match("love"));
+
+// 23. search()
+console.log("Search :", sentence.search("JavaScript"));
+
+// 24. localeCompare()
+console.log("Locale Compare :", "apple".localeCompare("banana"));
+
+// 25. valueOf()
+let str = new String("JavaScript");
+console.log("Value Of :", str.valueOf());
+
+// 26. toString()
+let x = 100;
+console.log("To String :", x.toString());
+
+// 27. charCodeAt()
+console.log("Char Code At :", text.charCodeAt(0));
+
+// 28. fromCharCode()
+console.log("From Char Code :", String.fromCharCode(65));
+
+// 29. matchAll()
+let line = "test1 test2";
+let result = [...line.matchAll(/test/g)];
+console.log("Match All :", result);
+
+// 30. normalize()
+let word = "HELLO";
+console.log("Normalize :", word.normalize());
+
+// ===============================
+// TEMPLATE LITERAL
+// ===============================
+
+let name = "Susi";
+let course = "JavaScript";
+
+console.log(`My name is ${name} and I am learning ${course}`);
+
+// ===============================
+// ESCAPE CHARACTERS
+// ===============================
+
+console.log("Hello\nWorld");
+console.log("Hello\tWorld");
+console.log("He said \"JavaScript\"");
+
+// ===============================
+// STRING LOOP
+// ===============================
+
+for(let i of text){
+    console.log(i);
+}
+
+// ===============================
+// STRING REVERSE
+// ===============================
+
+let rev = text.split("").reverse().join("");
+console.log("Reverse :", rev);
+
+// ===============================
+// PALINDROME
+// ===============================
+
+let pal = "madam";
+let check = pal.split("").reverse().join("");
+
+if(pal === check){
+    console.log("Palindrome");
+}
+else{
+    console.log("Not Palindrome");
+}
+
+// ===============================
+// COUNT VOWELS
+// ===============================
+
+let vowels = "education";
+let count = 0;
+
+for(let i of vowels){
+    if("aeiou".includes(i)){
+        count++;
+    }
+}
+
+console.log("Vowel Count :", count);
+
+// ===============================
+// END
+// ===============================
+    </script>
+    
+</body>
+</html>
